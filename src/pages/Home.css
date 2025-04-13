@@ -1,0 +1,61 @@
+.home-container {
+    padding: 0.5rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.home-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+
+.music-item {
+    background-color: var(--card-background);
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+    border: 1px solid var(--card-border);
+    width: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.music-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.music-cover {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.music-title {
+    color: var(--text-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+} 
