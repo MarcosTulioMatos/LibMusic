@@ -1,0 +1,186 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --border-color: #e2e8f0;
+    --input-background: #f8fafc;
+    --hover-background: #f1f5f9;
+    --primary-color: #646cff;
+    --header-background: var(--background-color);
+    --header-text: var(--text-color);
+    --header-border: var(--border-color);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --logo-hover-color: #0055ff;
+}
+
+.dark {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --border-color: #2d3748;
+    --input-background: #2d3748;
+    --hover-background: #4a5568;
+    --primary-color: #61dafb;
+    --logo-hover-color: #61dafb;
+}
+
+header {
+    background-color: var(--header-background);
+    color: var(--header-text);
+    padding: 10px;
+    box-shadow: 0 2px 4px var(--shadow-color);
+    border-bottom: 1px solid var(--header-border);
+}
+
+.container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menuHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    padding: 0.2em;
+    will-change: filter;
+    transition: all 300ms ease;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 1em var(--logo-hover-color)) brightness(1);
+    transform: scale(1.05);
+}
+
+.search {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search input {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-background);
+    color: var(--text-color);
+}
+
+.mode-toggle {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.mode-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mode-button:hover {
+    background-color: var(--hover-background);
+}
+
+.mode-button .icon {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.mode-button .icon.active {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .logo {
+        height: 40px;
+    }
+    
+    h1 {
+        font-size: 1rem;
+    }
+}
+
+.navigation {
+    margin-left: 2rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 300ms ease;
+}
+
+.navigation a:hover {
+    color: var(--primary-color);
+}
+
+.navigation a.active {
+    color: var(--primary-color);
+}
+
+.navigation a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(1);
+    transition: transform 300ms ease;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 300ms ease;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        margin-left: 1rem;
+    }
+
+    .navigation ul {
+        gap: 1rem;
+    }
+
+    .navigation a {
+        font-size: 0.9rem;
+    }
+}
+

@@ -1,0 +1,39 @@
+:root {
+  /* Cores do tema claro */
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #e2e8f0;
+  --input-background: #f8fafc;
+  --hover-background: #f1f5f9;
+  --primary-color: #646cff;
+  --header-background: #ffffff;
+  --header-text: #000000;
+  --header-border: #e2e8f0;
+  --card-background: #ffffff;
+  --card-border: #e2e8f0;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark {
+  /* Cores do tema escuro */
+  --background-color: #0a0a0f;
+  --text-color: #ffffff;
+  --border-color: #1a1a1f;
+  --input-background: #1a1a1f;
+  --hover-background: #2a2a2f;
+  --primary-color: #61dafb;
+  --header-background: #0a0a0f;
+  --header-text: #ffffff;
+  --header-border: #0a0a0f;
+  --card-background: #1a1a1f;
+  --card-border: #2a2a2f;
+  --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Transições suaves para todas as propriedades */
+* {
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+} 
