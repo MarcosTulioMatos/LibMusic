@@ -59,6 +59,14 @@
     transition: transform 0.3s ease;
 }
 
+.category-card h2,
+.category-card p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
 .category-card:hover {
     transform: translateY(-5px);
 }
@@ -77,6 +85,16 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
+}
+
+.playlist-grid h2,
+.playlist-grid p,
+.favorites-grid h2,
+.favorites-grid p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .not-found {

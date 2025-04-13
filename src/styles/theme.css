@@ -12,6 +12,7 @@
   --card-background: #ffffff;
   --card-border: #e2e8f0;
   --shadow-color: rgba(0, 0, 0, 0.3);
+  --main-content-background: #ffffff;
 }
 
 .dark {
@@ -28,6 +29,7 @@
   --card-background: #1a1a1f;
   --card-border: #2a2a2f;
   --shadow-color: rgba(0, 0, 0, 0.5);
+  --main-content-background: #1e1e24;
 }
 
 /* Transições suaves para todas as propriedades */

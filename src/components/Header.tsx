@@ -3,7 +3,6 @@ import './Header.css';
 import { ModeToggle } from './mode-toggle';
 import { Link } from 'react-router-dom';
 import Navigation from './Navigation';
-import { Select, MenuItem, FormControl } from '@mui/material';
 
 export default function Header() {
     return (
