@@ -46,6 +46,8 @@
     height: 130px;
     object-fit: cover;
     border-radius: 16px;
+    display: block;
+    margin: 0 auto;
 }
 
 .music-title {
@@ -58,4 +60,11 @@
     font-weight: 500;
     margin: 0;
     padding: 0;
+}
+
+.iwonder-cover {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 16px;
 } 

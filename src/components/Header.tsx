@@ -1,4 +1,4 @@
-import Logo from '../assets/sound.svg';
+import Logo from '../assets/music.svg';
 import './Header.css';
 import { ModeToggle } from './mode-toggle';
 import { Link } from 'react-router-dom';

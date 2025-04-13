@@ -7,53 +7,68 @@ export default function Home() {
         <Box className="home-container">
             <div className="home-stack">
                 <div className="music-item">
-                    <img 
-                        src="/placeholder-music.jpg" 
-                        alt="Capa da música" 
+                    <Typography className="music-title">
+                        Kanye West
+                    </Typography>
+                    <img
+                        src="/images/iwonder.png"
+                        alt="Capa da música"
                         className="music-cover"
                     />
                     <Typography className="music-title">
-                        Nome da Música
+                        I Wonder
                     </Typography>
                 </div>
                 <div className="music-item">
-                    <img 
-                        src="/placeholder-music.jpg" 
-                        alt="Capa da música" 
+                    <Typography className="music-title">
+                        Rihanna
+                    </Typography>
+                    <img
+                        src="/images/Rihanna.jpg"
+                        alt="Capa da música"
                         className="music-cover"
                     />
                     <Typography className="music-title">
-                        Nome da Música
+                        Bitch Better Have My Money
                     </Typography>
                 </div>
                 <div className="music-item">
-                    <img 
-                        src="/placeholder-music.jpg" 
-                        alt="Capa da música" 
+                <Typography className="music-title">
+                        Red Velvet
+                    </Typography>
+                    <img
+                        src="/images/redvelvet.jpg"
+                        alt="Capa da música"
                         className="music-cover"
                     />
                     <Typography className="music-title">
-                        Nome da Música
+                        Chill Kill
                     </Typography>
                 </div>
                 <div className="music-item">
-                    <img 
-                        src="/placeholder-music.jpg" 
-                        alt="Capa da música" 
+                <Typography className="music-title">
+                        New Jeans
+                    </Typography>
+                    <img
+                        src="/images/newjeans.jpg"
+                        alt="Capa da música"
                         className="music-cover"
                     />
                     <Typography className="music-title">
-                        Nome da Música
+                        ETA
                     </Typography>
                 </div>
                 <div className="music-item">
-                    <img 
-                        src="/placeholder-music.jpg" 
-                        alt="Capa da música" 
+                <Typography className="music-title">
+                        Billie Eilish
+                    </Typography>
+                    <img
+                        src="/images/chihiro.jpg"
+                        alt="Capa da música"
                         className="music-cover"
                     />
                     <Typography className="music-title">
-                        Nome da Música
+                        Chihiro
                     </Typography>
                 </div>
             </div>
